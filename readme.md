@@ -13,5 +13,7 @@
 - [HTTP 완벽 가이드](./http-the-definitive-guide/readme.md)
 - [데이터 중심 애플리케이션 설계](./designing-data-intensive-applications/readme.md)
 - [The Mythical Man-month](./the-mythical-man-month/readme.md)
+- [오브젝트](./object/readme.md)
+- [가상 면접 사례로 배우는 대규모 시스템 설계 기초](./designing-large-scale-systems/readme.md))
 
 ## 다 읽음
