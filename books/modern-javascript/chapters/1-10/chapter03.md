@@ -29,9 +29,7 @@ Application :웹 스토리지, 세션, 쿠키를 확인 및 관리 가능
 - 콘솔과 디버깅 관련한 자세한 내용은 구글의 Tools for Web Developers, Tools for Web Developers: Chrome DevTools을 참고하자 [링크](https://developer.chrome.com/docs/devtools?hl=ko)
 
 ## 3.3 Node.js
+### 3.3.1 Node.js와 npm
+- Node.js는 V8 자바스크립트 엔진으로 빌드된 런타임 환경 
+- npm은 자바스크립트 패키지 매니저다. Node.js에서 사용할 수 있는 모듈들을 패키지화해서 모아둔 저장소 역할과 패키지 설치 및 관리를 위한 CLI를 제공 
 
-### 3.3.1
-
-### 3.3.2
-
-### 3.3.3

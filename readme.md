@@ -2,7 +2,7 @@
 
 ## 읽는 중
 
-- [모던 자바스크립트](./books/mjs/readme.md)
+- [모던 자바스크립트](./books/modern-javascript/readme.md)
 - [알고리즘 문제 해결 전략](./books/algorithm-problem-solving-strategies/readme.md)
 - [성공과 실패를 결정하는 1%의 네트워크 원리](./principles-of-networking/readme.md)
 - [Real MySQL 8.0](./books/real-mysql-8.0/readme.md)

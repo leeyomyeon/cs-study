@@ -20,11 +20,11 @@
 
 ### 03
 
-[chapter03 - 자바스크립트 개발 환경과 실행 방법](./chapters/1-10/chapte03.md)
+[chapter03 - 자바스크립트 개발 환경과 실행 방법](./chapters/1-10/chapter03.md)
 
 ### 04
 
-[chapter04 - 변수](./chapters/1-10/chapter04.md)
+[chapter04 - 변수](./chapters/1-10/chpater04.md)
 
 ### 05
 
