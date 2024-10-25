@@ -24,7 +24,7 @@
 
 ### 04
 
-[chapter04 - 변수](./chapters/1-10/chpater04.md)
+[chapter04 - 변수](./chapters/1-10/chapter04.md)
 
 ### 05
 
