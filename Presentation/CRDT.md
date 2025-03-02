@@ -320,7 +320,7 @@ CRDT 구현 측면(데이터 타입 자체와 전파 메커니즘 모두)에서 
 
 ### 연산 기반 CRDT의 표준 실행 모델.
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig2.png)
 
 비교적 교환 법칙을 만족하지 않는(non-commutative) 연산을 포함하는 데이터 타입에서도 수렴을 보장하기 위해, 연산 기반 CRDT의 실행 모델(그림 2 참조)은 업데이트 연산의 실행을 prepare 단계와 effect 단계의 두 단계로 구분합니다.
 
@@ -343,8 +343,8 @@ CRDT 구현 측면(데이터 타입 자체와 전파 메커니즘 모두)에서 
 
 이러한 데이터 타입은 “순열 동등성(Principle of Permutation Equivalence)”을 만족합니다 [10]: 만약 모든 순차적 순열이 동일한 상태를 낳는다면, 동시 실행된 연산들도 동일한 상태로 수렴해야 합니다. 이러한 데이터 타입에는 FIFO 순서조차 필요하지 않으며, 단지 정확히 한 번 전달만 보장하면 됩니다. 인과적 전달은 보통 인과 일관성을 달성하기 위해 사용됩니다.
 
-![fig](./images/CRDT/fig1.png)
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig3.png)
+![fig](./images/CRDT/fig4.png)
 그림 3에서는 GCounter(증가 연산만 있는 카운터), PNCounter(음수 가능, 증가와 감소 연산 있음), GSet(추가 연산만 있는 집합) 세 가지 예제를 보여줍니다.
 
 ## 3.2. Observed-cancel CRDTs
@@ -378,7 +378,7 @@ CRDT 구현 측면(데이터 타입 자체와 전파 메커니즘 모두)에서 
 
 여러 구현들이 나왔으며, 매우 기초적인 것부터 “최적화된” 버전 [11]까지 존재합니다.
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig5.png)
 이전에 발표된 것보다 더 최적화된 버전이 그림 5에 제시되어 있습니다.
 
 그림 4는 관측-제거 집합의 기초(naive) 구현을 보여줍니다.
@@ -441,7 +441,7 @@ CRDT는 순차 실행에서는 원래의 순차 데이터 타입의 의미를 �
 
 다중값 레지스터는 최신의 동시 쓰기(write) 연산 집합을 유지하며, read는 해당 값들의 집합을 반환하고, write는 해당 집합을 단일 값으로 덮어씁니다.
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig6.png)
 그림 6은 다중값 레지스터의 op-based 구현 예제를 보여줍니다.
 
 그림 6에서 상태는 값과 유일 식별자로 구성된 쌍들의 집합입니다.
@@ -511,11 +511,11 @@ TCB는 메시지와 함께, 메시지가 갖는 인과적 happens-before 관계�
 | Write stability     | Terry et al. [81]            | 잠정적 쓰기가 확정됨                         |
 | Causal stability    | Baquero, Almeida, Shoker [7] | 동시 메시지들이 전달된 후 안정 상태에 도달함 |
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig6.png)
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig7.png)
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig8.png)
 _이후 3.3 및 4.2 이하의 내용들은 CRDT 구현에서 순수 연산 기반 접근 방식의 응용, PO-Log(부분 순서 로그)를 활용한 구현, 인과적 안정성을 통한 최적화 등 CRDT 설계의 구체적인 알고리즘적 측면들을 다루며, 본문에서는 그림 7부터 그림 9까지 다양한 예제와 도식을 통해 설명됩니다._
 
 # 5. State-based CRDTs
@@ -589,7 +589,7 @@ _이후 3.3 및 4.2 이하의 내용들은 CRDT 구현에서 순수 연산 기�
 
 ## 5.2. Basics of State-based CRDTs
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig9.png)
 
 ### 상태 기반 CRDTs.
 
@@ -623,9 +623,10 @@ _이후 3.3 및 4.2 이하의 내용들은 CRDT 구현에서 순수 연산 기�
 
 또한, 일부에서는 순차 데이터 타입의 연산이 교환 법칙만 만족하면 재사용 가능하다고 생각할 수 있으나, 이는 사실이 아닙니다
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig10.png)
 
-![fig](./images/CRDT/fig1.png)
+![fig](./images/CRDT/fig11.png)
+![fig](./images/CRDT/fig12.png)
 예를 들어, 그림 12의 “advancer” 데이터 타입은, 상태가 임의의 키에서 정수 값을 매핑하는 맵이며, 하나의 연산 `advance()`는 해당 키의 값을, 다른 키들의 값보다 최소 1만큼 크게 만듭니다.
 
 질의 `max()`는 최대 값을 가진 키 집합을 반환합니다
