@@ -12,7 +12,6 @@
 - Load Factor에 대해 설명해 주세요. 본인이 사용하는 언어에서의 해시 자료구조는 Load Factor에 관련한 정책이 어떻게 구성되어 있나요?
 - 다른 자료구조와 비교하여, 해시 테이블은 멀티스레드 환경에서 심각한 수준의 Race Condition 문제에 빠질 위험이 있습니다. 성능 감소를 최소화 한 채로 해당 문제를 해결할 수 있는 방법을 설계해 보세요.
 - 트리와 이진트리, 이진탐색트리에 대해 설명해 주세요.
-- 그래프와 트리의 차이가 무엇인가요?
 - 이진탐색트리에서 중위 탐색을 하게 되면, 그 결과는 어떤 의미를 가지나요?
 - 이진탐색트리의 주요 연산에 대한 시간복잡도를 설명하고, 왜 그런 시간복잡도가 도출되는지 설명해 주세요.
 - 이진탐색트리의 한계점에 대해 설명해주세요.
@@ -26,6 +25,9 @@
 - Red Black Tree는 어떻게 균형을 유지할 수 있을까요?
 - Red Black Tree의 주요 성질 4가지에 대해 설명해 주세요.
 - 2-3-4 Tree, AVL Tree 등의 다른 BBST 가 있음에도, 왜 Red Black Tree가 많이 사용될까요?
+
+### 정렬 알고리즘
+
 - 정렬 알고리즘에 대해 설명해 주세요.
 - Quick Sort와 Merge Sort를 비교해 주세요.
 - Quick Sort에서 O(N^2)이 걸리는 예시를 들고, 이를 개선할 수 있는 방법에 대해 설명해 주세요.
@@ -36,6 +38,9 @@
 - 값이 거의 정렬되어 있거나, 아예 정렬되어 있다면, 위 세 알고리즘의 성능 비교 결과는 달라질까요?
 - 본인이 사용하고 있는 언어에선, 어떤 정렬 알고리즘을 사용하여 정렬 함수를 제공하고 있을까요?
 - 정렬해야 하는 데이터는 50G 인데, 메모리가 4G라면, 어떤 방식으로 정렬을 진행할 수 있을까요?
+
+### 그래프
+
 - 그래프 자료구조에 대해 설명하고, 이를 구현할 수 있는 두 방법에 대해 설명해 주세요.
 - 각 방법에 대해, "두 정점이 연결되었는지" 확인하는 시간복잡도와 "한 정점에 연결된 모든 정점을 찾는" 시간복잡도, 그리고 공간복잡도를 비교해 주세요.
 - 정점의 개수가 N개, 간선의 개수가 N^3 개라면, 어떤 방식으로 구현하는 것이 효율적일까요?
@@ -46,13 +51,22 @@
 - 정점의 개수가 N개, 간선의 개수가 N^3 개라면, 어떤 알고리즘이 효율적일까요?
 - A\* 알고리즘에 대해 설명해 주세요. 이 알고리즘은 다익스트라와 비교해서 어떤 성능을 낼까요?
 - 음수 간선이 있을 때와, 음수 사이클이 있을 때 각각 어떤 최단거리 알고리즘을 사용해야 하는지 설명해 주세요.
+
+### 재귀
+
 - 재귀함수에 대해 설명해 주세요.
 - 재귀 함수의 동작 과정을 Call Stack을 활용해서 설명해 주세요.
 - 언어의 스펙에 따라, 재귀함수의 최적화를 진행해주는 경우가 있습니다. 어떤 경우에 재귀함수의 최적화가 가능하며, 이를 어떻게 최적화 할 수 있을지 설명해 주세요.
+
+### MST
+
 - MST가 무엇이고, 어떻게 구할 수 있을지 설명해 주세요.
 - Kruskal 알고리즘에서 사용하는 Union-Find 자료구조에 대해 설명해 주세요.
 - Kruskal 과 Prim 중, 어떤 것이 더 빠를까요?
 - Kruskal 과 Prim 알고리즘을 통해 얻어진 결과물은 무조건 트리인가요? 만약 그렇다면 증명해 주세요. 그렇지 않다면, 반례를 설명해 주세요.
+
+### Thread Safe
+
 - Thread Safe 한 자료구조가 있을까요? 없다면, 어떻게 Thread Safe 하게 구성할 수 있을까요?
 - 배열의 길이를 알고 있다면, 조금 더 빠른 Thread Safe 한 연산을 만들 순 없을까요?
 - 사용하고 있는 언어의 자료구조는 Thread Safe 한가요? 그렇지 않다면, Thread Safe 한 Wrapped Data Structure 를 제공하고 있나요?
@@ -521,3 +535,306 @@
 - Lombok의 @Data를 잘 사용하지 않는 이유는 무엇일까요?
 - Tomcat이 정확히 어떤 역할을 하는 도구인가요?
 - 혹시 Netty에 대해 들어보셨나요? 왜 이런 것을 사용할까요?
+
+## Kafka
+
+- Kafka의 기본 아키텍처와 주요 컴포넌트(Producer, Broker, Consumer, Topic 등)에 대해 설명해주세요.
+- Kafka Broker의 역할과 주요 기능은 무엇인가요?
+- Producer와 Consumer의 차이점 및 역할에 대해 설명해주세요.
+- Kafka에서 Partition과 Offset의 개념 및 활용 방법은 무엇인가요?
+- Kafka의 메시지 보존 정책(retention policy)은 어떻게 작동하나요?
+- Consumer Group의 개념과 이를 통해 메시지 병렬 처리를 어떻게 구현하는지 설명해주세요.
+- Kafka에서 리플리케이션(replication)의 필요성과 설정 방법은 무엇인가요?
+- Kafka 클러스터의 장애 복구(failover) 메커니즘에 대해 설명해주세요.
+- Kafka Connect의 역할과 이를 활용한 데이터 파이프라인 구축 방법은 무엇인가요?
+- Kafka Streams와 KSQL의 차이점 및 각각의 사용 사례에 대해 설명해주세요.
+- Kafka에서 Exactly-Once Semantics를 구현하는 방법에 대해 설명해주세요.
+- Producer 측에서 발생할 수 있는 메시지 중복 문제를 어떻게 해결할 수 있나요?
+- Kafka Consumer가 재시작될 때 오프셋(offset) 관리를 어떻게 수행하나요?
+- Kafka 로그 컴팩션(log compaction)이란 무엇이며, 어떤 상황에서 사용되나요?
+- Kafka 성능 튜닝을 위한 주요 고려 사항에는 어떤 것들이 있나요?
+- Kafka 클러스터 구성 시 네트워크 및 하드웨어 설정에서 고려해야 할 점은 무엇인가요?
+- Kafka에서 데이터 손실을 방지하기 위한 전략은 무엇인가요?
+- Kafka의 ACL(Access Control List) 및 보안 설정 방법에 대해 설명해주세요.
+- SSL/TLS 및 SASL을 사용한 Kafka 보안 구성 방법에 대해 설명해주세요.
+- Kafka Broker 재시작 시 클러스터 안정성을 유지하는 방법은 무엇인가요?
+- In-Sync Replica(ISR)의 역할과 중요성은 무엇인가요?
+- Kafka에서 메시지의 순서를 보장하는 방법은 무엇인가요?
+- Producer의 ACK 설정 옵션(0, 1, all)의 차이점과 의미에 대해 설명해주세요.
+- Kafka와 RabbitMQ 같은 다른 메시징 시스템의 주요 차이점은 무엇인가요?
+- Kafka 클러스터의 Zero Downtime 배포 전략에 대해 설명해주세요.
+- 스트림 처리와 배치 처리의 차이점을 Kafka 관점에서 설명해주세요.
+- Kafka에서 멀티 테넌시(Multi-Tenancy)를 어떻게 지원하나요?
+- Kafka 클러스터 모니터링을 위한 주요 지표와 사용 도구에는 어떤 것들이 있나요?
+- Consumer Rebalance 과정과 이를 최적화하기 위한 방법은 무엇인가요?
+- Producer 성능 병목 현상 발생 시 해결 전략은 무엇인가요?
+- ZooKeeper의 역할과 KRaft 모드의 차이점에 대해 설명해주세요.
+- Kafka의 메시지 압축 옵션(gzip, snappy, lz4 등)의 장단점은 무엇인가요?
+- 메시지 처리 중 오류가 발생했을 때의 처리 전략(예: DLQ 도입 등)에 대해 설명해주세요.
+- Kafka 클러스터 확장(Scale-out) 시 고려해야 할 모범 사례는 무엇인가요?
+- Kafka에서 KRaft 모드 전환 시 고려해야 할 사항은 무엇인가요?
+- Kafka 메시지 전송 지연(latency)을 최소화하는 방법에는 어떤 것들이 있나요?
+- Sync와 Async 전송 방식의 차이점과 각각의 장단점은 무엇인가요?
+- Kafka 클러스터 운영 시 예상할 수 있는 장애와 그에 대한 대응 방안은 무엇인가요?
+- Consumer Lag(지연) 모니터링 방법과 이를 해결하기 위한 전략은 무엇인가요?
+- Kafka에서 데이터 일관성을 보장하는 방법은 무엇인가요?
+- Producer의 배치 전송(batch sending) 설정이 성능에 미치는 영향에 대해 설명해주세요.
+- Kafka Consumer의 오프셋 커밋 전략(자동 vs 수동 커밋)에 대해 설명해주세요.
+- Dead Letter Queue(DLQ)를 Kafka에서 구현하는 방법은 무엇인가요?
+- Kafka 메시지 스키마 관리(Schema Registry)의 역할과 필요성은 무엇인가요?
+- Kafka와 NoSQL 데이터베이스를 연동할 때 고려해야 할 사항은 무엇인가요?
+- Kafka Streams의 상태 저장소(State Store) 관리 방식에 대해 설명해주세요.
+- Kafka를 활용한 마이크로서비스 아키텍처 설계 사례에 대해 설명해주세요.
+- Kafka 클러스터에 새로운 브로커를 추가할 때 고려해야 할 주요 요소는 무엇인가요?
+- Kafka 커넥터(Connector) 개발 및 커스터마이징 방법에 대해 설명해주세요.
+- Kafka 운영 시 모니터링과 경보 시스템 설정 시 중요한 핵심 지표는 무엇인가요?
+
+## Elasticsearch
+
+- Elasticsearch의 기본 아키텍처와 주요 컴포넌트(Cluster, Node, Index, Document 등)에 대해 설명해주세요.
+- Elasticsearch에서 인덱스와 도큐먼트의 개념과 관계는 무엇인가요?
+- Shard와 Replica의 역할 및 차이점은 무엇인가요?
+- Elasticsearch에서 클러스터와 노드 간의 관계와 역할에 대해 설명해주세요.
+- Query DSL의 기본 구조와 사용 방법에 대해 설명해주세요.
+- Match 쿼리와 Term 쿼리의 차이점은 무엇인가요?
+- Range 쿼리의 활용 사례와 주의사항에 대해 설명해주세요.
+- Bool 쿼리의 구성 요소(Must, Should, Must Not, Filter)에 대해 설명해주세요.
+- Aggregation의 개념과 Bucket Aggregation, Metric Aggregation의 차이에 대해 설명해주세요.
+- Analyzers, Tokenizers, Filters의 역할과 설정 방법에 대해 설명해주세요.
+- Mapping의 개념과 동적 매핑(Dynamic Mapping) 및 명시적 매핑(Explicit Mapping)의 차이점은 무엇인가요?
+- Elasticsearch에서 Relevance Scoring의 원리와 개선 방법에 대해 설명해주세요.
+- Boosting을 통한 검색 결과 가중치 조정 방법에 대해 설명해주세요.
+- Multi-match 쿼리와 Cross-field 검색의 차이점은 무엇인가요?
+- Nested 타입과 Object 타입의 차이점 및 사용 시 주의사항에 대해 설명해주세요.
+- Elasticsearch의 인덱스 설정(Index Settings)과 매핑 설정(Mapping Settings)의 차이점은 무엇인가요?
+- 검색 성능 튜닝을 위한 주요 고려사항은 무엇인가요?
+- Elasticsearch의 분산 시스템 특성과 데이터 복제 메커니즘에 대해 설명해주세요.
+- 클러스터 상태를 모니터링하기 위한 도구와 주요 지표에는 무엇이 있나요?
+- Replica가 부족할 때 발생할 수 있는 문제와 해결 방법은 무엇인가요?
+- Data Node, Master Node, Client Node의 역할과 차이점에 대해 설명해주세요.
+- Kibana와 Elasticsearch의 관계 및 연동 방법에 대해 설명해주세요.
+- Elasticsearch의 스케일링(Scale-out) 전략에는 어떤 것들이 있나요?
+- 인덱스 템플릿(Index Template)의 역할과 구성 방법에 대해 설명해주세요.
+- 인덱스 롤오버(Rollover) 전략과 사용 사례에 대해 설명해주세요.
+- Suggester 기능의 동작 원리와 활용 방법은 무엇인가요?
+- Scroll API와 Search After의 차이점 및 각각의 사용 시나리오는 무엇인가요?
+- Time-based index의 개념과 활용 방안에 대해 설명해주세요.
+- 데이터 삭제 시 발생할 수 있는 이슈와 그 해결 방법은 무엇인가요?
+- Snapshot과 Restore 기능을 통한 백업 전략에 대해 설명해주세요.
+- 분산 트랜잭션과 관련하여 Elasticsearch는 어떤 접근 방식을 취하나요?
+- Elasticsearch 버전 업그레이드 시 고려해야 할 사항은 무엇인가요?
+- Index Lifecycle Management(ILM)의 기능과 필요성에 대해 설명해주세요.
+- Logstash, Beats 등과의 연동을 통한 데이터 수집 및 처리 방식에 대해 설명해주세요.
+- Elasticsearch의 보안 기능(예: X-Pack Security)과 설정 방법에 대해 설명해주세요.
+- Role-Based Access Control(RBAC)과 Document Level Security의 차이에 대해 설명해주세요.
+- 커스텀 분석기(Custom Analyzer)를 생성하고 적용하는 방법은 무엇인가요?
+- 멀티테넌시를 지원하기 위한 Elasticsearch의 접근 방식은 무엇인가요?
+- Bulk API 사용 시 성능 최적화 및 주의사항은 무엇인가요?
+- Latency와 Throughput 튜닝을 위한 Elasticsearch 설정 방법에 대해 설명해주세요.
+- 복잡한 검색 조건을 구현하기 위한 Query DSL 활용 사례를 설명해주세요.
+- Reindex API의 사용 목적과 동작 방식에 대해 설명해주세요.
+- Snapshot Repository 구성 및 관리 방법에 대해 설명해주세요.
+- 데이터 정합성(consistency) 모델과 Elasticsearch의 eventual consistency 특성에 대해 설명해주세요.
+- 인덱스 및 도큐먼트 크기 최적화를 위한 전략은 무엇인가요?
+- 파이프라인(pipeline) 처리 기능과 Ingest Node의 역할에 대해 설명해주세요.
+- Hot-Warm-Cold 아키텍처의 개념과 구현 방법에 대해 설명해주세요.
+- 커스텀 스크립팅의 활용과 성능에 미치는 영향에 대해 설명해주세요.
+- Elasticsearch 클러스터에서 발생할 수 있는 장애와 복구 전략은 무엇인가요?
+- 최근 Elasticsearch의 업데이트 및 새로운 기능에 대해 알고 있는 내용을 공유해주세요.
+
+## Debezium CDC
+
+- Debezium CDC의 기본 개념과 작동 원리에 대해 설명해주세요.
+- Debezium이 CDC(Change Data Capture)를 구현하는 방식은 무엇인가요?
+- MySQL에서 Debezium 커넥터를 설정할 때 고려해야 할 주요 요소는 무엇인가요?
+- MySQL의 binlog를 활용하여 데이터를 캡처하는 원리에 대해 설명해주세요.
+- Debezium과 Elasticsearch 간 데이터 동기화 아키텍처는 어떻게 구성되나요?
+- Debezium 커넥터의 주요 구성 요소와 각 요소의 역할에 대해 설명해주세요.
+- CDC를 활용해 데이터 일관성을 유지하는 방법에는 어떤 것들이 있나요?
+- Debezium이 스키마 변경(schema evolution)을 감지하고 처리하는 방식은 무엇인가요?
+- MySQL binlog의 형식(ROW, STATEMENT, MIXED)과 Debezium의 관계에 대해 설명해주세요.
+- Debezium 설정에서 snapshot 옵션의 역할과 관련 설정 방법에 대해 설명해주세요.
+- Debezium 사용 시 발생할 수 있는 데이터 지연(latency) 문제와 해결 방법은 무엇인가요?
+- MySQL과 Elasticsearch 간 동기화 과정에서 발생할 수 있는 데이터 정합성 이슈는 무엇이며, 이를 어떻게 해결할 수 있나요?
+- Debezium에서 사용되는 메시지 포맷(예: JSON, Avro 등)에 대해 설명해주세요.
+- Elasticsearch에 실시간 데이터 인덱싱을 수행할 때 주의해야 할 점은 무엇인가요?
+- Debezium 커넥터의 장애 복구 및 재시작 시 동작 방식에 대해 설명해주세요.
+- MySQL 테이블 변경 감지 시 Debezium이 이벤트를 처리하는 과정을 설명해주세요.
+- Debezium의 offset 커밋 메커니즘과 이를 통한 데이터 지속성 보장 방법은 무엇인가요?
+- CDC 구현 시 트랜잭션 처리 방식과 Debezium의 역할에 대해 설명해주세요.
+- CDC 도입 시 데이터 중복 문제가 발생할 수 있는데, 이를 해결하는 방법은 무엇인가요?
+- Debezium 커넥터에서 특정 테이블이나 이벤트만 필터링하는 기능에 대해 설명해주세요.
+- Kafka Connect와 Debezium의 연계 동작 방식에 대해 설명해주세요.
+- Debezium 기반 데이터 파이프라인을 모니터링하고 관리하는 방법은 무엇인가요?
+- Elasticsearch 동기화를 위해 Debezium과 함께 사용할 수 있는 오픈 소스 도구에는 어떤 것들이 있나요?
+- Debezium의 snapshot 모드 사용 시 발생할 수 있는 문제와 그 해결 방안은 무엇인가요?
+- MySQL 데이터베이스 스키마 변경 시 Debezium은 어떻게 대응하나요?
+- CDC 도입 프로젝트에서 발생할 수 있는 장애와 이를 예방하기 위한 모범 사례는 무엇인가요?
+- Debezium 커넥터를 구성하기 위한 최소 요구 사항과 권장 설정은 무엇인가요?
+- Debezium의 메시지 처리 방식과 실패 시 재처리 메커니즘에 대해 설명해주세요.
+- Elasticsearch에 데이터를 동기화할 때 인덱싱 성능을 최적화하는 방법은 무엇인가요?
+- Debezium을 활용한 MySQL–Elasticsearch 연동 프로젝트에서 겪은 경험과 주요 교훈에 대해 공유해주세요.
+
+## WebSocket
+
+- WebSocket의 기본 개념과 HTTP와의 차이점은 무엇인가요?
+- WebSocket 연결의 Handshake 과정은 어떻게 진행되나요?
+- WebSocket의 메시지 프레이밍(message framing) 메커니즘에 대해 설명해주세요.
+- Long Polling과 WebSocket의 차이점은 무엇인가요?
+- WebSocket 통신에서 보안을 강화하기 위한 주요 고려 사항은 무엇인가요?
+- WebSocket 연결이 끊어졌을 때 재연결(reconnect) 로직은 어떻게 구현하나요?
+- WebSocket 프로토콜에서 사용되는 상태 코드와 그 의미에 대해 설명해주세요.
+- Ping/Pong 메커니즘이 WebSocket 연결 유지에 어떻게 활용되는지 설명해주세요.
+- WebSocket 확장(extensions) 기능은 무엇이며, 어떤 용도로 사용되나요?
+- WebSocket 구현 시 발생할 수 있는 Cross-Origin 문제와 그 해결 방법은 무엇인가요?
+- 단일 서버와 클러스터 환경에서의 WebSocket 구현 차이점은 무엇인가요?
+- WebSocket에서 텍스트와 이진 데이터 전송 방식의 장단점은 무엇인가요?
+- 실시간 채팅이나 게임 애플리케이션에서 WebSocket이 선호되는 이유는 무엇인가요?
+- WebSocket 서버의 부하 분산(load balancing) 전략에는 어떤 것들이 있나요?
+- WebSocket 연결 유지 시 메모리 및 리소스 관리 방법은 무엇인가요?
+- WebSocket과 HTTP/2의 주요 차이점은 무엇인가요?
+- WebSocket 연결의 성능 최적화를 위한 고려사항은 무엇인가요?
+- WebSocket 서버 구축 시 장애 조치(failover) 방안을 어떻게 마련할 수 있나요?
+- 클라이언트에서 WebSocket 연결 오류를 디버깅하는 방법에는 어떤 것들이 있나요?
+- WebSocket과 서버 푸시(Server-Sent Events)의 차이점은 무엇인가요?
+- TLS/SSL을 활용하여 WebSocket 연결을 보호하는 방법에 대해 설명해주세요.
+- WebSocket 통신에서 프록시 서버 사용 시 발생할 수 있는 문제는 무엇인가요?
+- WebSocket 라이브러리(예: Socket.IO, ws 등)의 차이점과 선택 기준에 대해 설명해주세요.
+- WebSocket을 활용한 Pub/Sub 시스템 구현 방법에 대해 설명해주세요.
+- WebSocket 연결 종료 시 graceful shutdown을 구현하는 방법은 무엇인가요?
+- WebSocket의 버전 관리 및 프로토콜 업데이트가 필요한 이유는 무엇인가요?
+- WebSocket 통신에서 데이터 압축 기능을 사용할 때 고려해야 할 점은 무엇인가요?
+- WebSocket 연결 시 세션 관리를 구현하는 방법에는 어떤 것들이 있나요?
+- WebSocket 서버와 클라이언트 간의 인증 및 인가 방식은 어떻게 구현하나요?
+- WebSocket 기반 애플리케이션에서 발생할 수 있는 일반적인 문제와 해결 방안은 무엇인가요?
+
+## CRDT (Yjs) 관련 질문 30가지
+
+- CRDT(Conflict-free Replicated Data Type)의 기본 개념과 사용 목적은 무엇인가요?
+- Yjs 라이브러리의 주요 기능과 특징에 대해 설명해주세요.
+- Yjs를 사용하여 분산 환경에서 데이터 동기화를 구현하는 방법은 무엇인가요?
+- CRDT와 OT(Operational Transformation)의 차이점은 무엇인가요?
+- Yjs에서 제공하는 데이터 타입(Y.Array, Y.Map 등)의 역할과 사용 사례는 무엇인가요?
+- Yjs의 업데이트 전파 및 문서 병합 방식은 어떻게 동작하나요?
+- Yjs에서 문서의 버전 관리와 업데이트 충돌 해결 방법에 대해 설명해주세요.
+- Yjs의 Awareness 프로토콜이란 무엇이며, 어떤 기능을 제공하나요?
+- Yjs의 상대적 버전 관리(relative versioning) 메커니즘은 어떻게 작동하나요?
+- Yjs와 다른 CRDT 라이브러리(예: Automerge) 간의 주요 차이점은 무엇인가요?
+- Yjs를 통한 실시간 협업 애플리케이션 구현 시 고려해야 할 사항은 무엇인가요?
+- Yjs에서 업데이트를 옵저빙(observing)하는 방법과 이벤트 핸들링은 어떻게 이루어지나요?
+- Yjs의 Delta 업데이트 방식과 그 장점에 대해 설명해주세요.
+- Yjs 문서 병합 과정에서 발생할 수 있는 충돌 상황은 어떤 것이며, 이를 어떻게 해결하나요?
+- Yjs의 메모리 사용 최적화 및 성능 개선 방안은 무엇인가요?
+- Yjs의 저장소(storage) 모듈과 데이터를 영구 저장하는 전략은 무엇인가요?
+- 네트워크 지연(latency) 환경에서 Yjs의 동기화 성능을 개선하는 방법은 무엇인가요?
+- Yjs와 WebSocket, WebRTC 등 다른 실시간 통신 프로토콜 연동 방안에 대해 설명해주세요.
+- CRDT를 이용한 분산 시스템에서 eventual consistency와 strong consistency의 차이는 무엇인가요?
+- Yjs 문서 크기가 커질 때 발생할 수 있는 성능 이슈와 대응 방법은 무엇인가요?
+- Yjs의 모듈화 구조와 플러그인 확장 기능에 대해 설명해주세요.
+- Yjs에서 데이터 업데이트 시 네트워크 트래픽 최적화를 위한 기법은 무엇인가요?
+- Yjs 업데이트 메시지의 크기를 최소화하는 방법에 대해 설명해주세요.
+- Yjs 기반 협업 도구에서 사용되는 이벤트(event) 처리 패턴은 무엇인가요?
+- CRDT를 활용한 오프라인 편집 및 동기화 시나리오는 어떻게 구성되나요?
+- Yjs에서 스키마 변경(schema evolution)을 처리하는 방식은 무엇인가요?
+- Yjs 문서의 데이터 정합성을 보장하기 위한 전략은 무엇인가요?
+- Yjs의 업데이트 충돌 해결 알고리즘에 대해 설명해주세요.
+- Yjs를 실제 프로덕션 환경에 적용할 때 고려해야 할 주요 이슈는 무엇인가요?
+- Yjs를 활용한 협업 시스템에서 보안 및 접근 제어를 구현하는 방법은 무엇인가요?
+
+## Nest 관련 질문 30가지
+
+- NestJS의 기본 아키텍처와 설계 철학에 대해 설명해주세요.
+- NestJS의 모듈(Module) 시스템과 그 역할은 무엇인가요?
+- NestJS에서 Controller와 Service의 역할 및 상호작용에 대해 설명해주세요.
+- Dependency Injection이 NestJS에서 어떻게 구현되는지 설명해주세요.
+- NestJS에서 Middleware와 Interceptor의 차이점은 무엇인가요?
+- Exception Filter의 개념과 NestJS에서의 사용 사례에 대해 설명해주세요.
+- Pipe와 Guard의 역할 및 사용 예제에 대해 설명해주세요.
+- NestJS에서 커스텀 데코레이터를 생성하고 활용하는 방법은 무엇인가요?
+- Express와 Fastify를 NestJS에서 사용할 때의 차이점은 무엇인가요?
+- 모듈 간 의존성 관리와 순환 의존성 문제를 해결하는 방법은 무엇인가요?
+- NestJS에서 WebSocket을 이용한 실시간 통신 구현 방법은 무엇인가요?
+- GraphQL 모듈을 NestJS와 통합하는 방법에 대해 설명해주세요.
+- NestJS에서 Microservices 아키텍처를 구현하는 주요 전략은 무엇인가요?
+- CQRS 패턴을 NestJS 프로젝트에 적용하는 방법에 대해 설명해주세요.
+- ConfigModule을 활용한 환경 설정 관리 방법은 무엇인가요?
+- NestJS에서 인터셉터의 실행 순서와 활용 예제에 대해 설명해주세요.
+- ValidationPipe를 사용한 데이터 유효성 검사 구현 방법은 무엇인가요?
+- 커스텀 Exception Filter를 만들어 예외 처리를 개선하는 방법은 무엇인가요?
+- NestJS의 Logger 모듈을 통한 로그 관리 전략은 무엇인가요?
+- 메타데이터를 활용한 데코레이터 패턴의 장점은 무엇인가요?
+- 동적 모듈(Dynamic Module)을 생성하는 방법과 그 활용 사례는 무엇인가요?
+- NestJS에서 Testing 모듈을 활용한 유닛 및 통합 테스트 작성 방법은 무엇인가요?
+- GraphQL Resolver와 Service 간의 역할 분담은 어떻게 이루어지나요?
+- Swagger를 이용한 API 문서화를 NestJS에서 구현하는 방법은 무엇인가요?
+- Middleware와 Interceptor를 활용한 공통 로직 처리 방법에는 어떤 것들이 있나요?
+- Guard를 활용하여 인증 및 인가를 구현하는 방법에 대해 설명해주세요.
+- 마이크로서비스 간 통신(RabbitMQ, gRPC 등)을 NestJS에서 설정하는 방법은 무엇인가요?
+- ORM 통합(TypeORM, Sequelize 등)을 통해 데이터베이스를 연결하는 방법은 무엇인가요?
+- NestJS에서 캐싱(Caching)을 적용하는 방법과 고려 사항은 무엇인가요?
+- NestJS 최신 버전에서 추가된 기능이나 개선 사항에 대해 설명해주세요.
+
+## Spring
+
+- Spring Framework의 기본 개념과 주요 특징에 대해 설명해주세요.
+- Spring Boot와 전통적 Spring Framework의 차이점은 무엇인가요?
+- IoC(Inversion of Control)와 DI(Dependency Injection)의 개념 및 이점에 대해 설명해주세요.
+- Spring Bean의 라이프사이클과 관련 콜백 메서드에 대해 설명해주세요.
+- @Component, @Service, @Repository의 차이점 및 사용 사례는 무엇인가요?
+- AOP(Aspect Oriented Programming)를 활용한 공통 관심사 분리 방법에 대해 설명해주세요.
+- Spring에서 트랜잭션 관리와 @Transactional 어노테이션의 역할에 대해 설명해주세요.
+- Spring MVC 아키텍처의 구성 요소와 요청 처리 과정을 설명해주세요.
+- Spring Boot의 자동 구성(Auto-Configuration) 원리에 대해 설명해주세요.
+- 예외 처리를 위한 @ControllerAdvice의 역할과 활용 방법은 무엇인가요?
+- Spring Security의 기본 개념과 인증/인가 처리 흐름에 대해 설명해주세요.
+- RESTful API를 Spring에서 구현하는 방법과 모범 사례는 무엇인가요?
+- Spring Boot Actuator를 통한 애플리케이션 모니터링 방법은 무엇인가요?
+- Spring Cloud를 활용한 마이크로서비스 아키텍처 구현 전략에 대해 설명해주세요.
+- Spring에서 메시징 시스템(Kafka, RabbitMQ 등)과의 연동 방법은 무엇인가요?
+- Spring의 캐싱 추상화(Cache Abstraction)와 캐시 적용 방법에 대해 설명해주세요.
+- Spring Boot에서 프로파일 관리와 환경별 설정 적용 방법은 무엇인가요?
+- Spring Bean의 Scope(싱글톤, 프로토타입 등) 차이점과 활용 사례는 무엇인가요?
+- Spring의 이벤트 발행 및 리스너(Event Listener) 메커니즘에 대해 설명해주세요.
+- 커스텀 어노테이션을 생성하고 이를 Spring에서 활용하는 방법은 무엇인가요?
+- Spring WebFlux와 Spring MVC의 차이점 및 사용 시나리오는 무엇인가요?
+- Spring에서 비동기 처리(Asynchronous Processing)를 구현하는 방법에 대해 설명해주세요.
+- Logback을 이용한 Spring Boot의 로깅 설정과 관리 방법은 무엇인가요?
+- HttpMessageConverter의 역할과 Spring에서의 메시지 변환 과정을 설명해주세요.
+- RestTemplate과 WebClient의 차이점 및 사용 사례에 대해 설명해주세요.
+- @Scheduled 애노테이션을 사용한 스케줄링 작업 구현 방법은 무엇인가요?
+- Spring Boot Starter의 개념과 주요 Starter들의 역할에 대해 설명해주세요.
+- Java Config와 XML Config를 통한 Bean 등록 및 설정 방식의 차이점은 무엇인가요?
+- 최신 Spring 버전에서 추가된 기능 및 개선 사항에 대해 설명해주세요.
+
+## Redis
+
+- Redis의 기본 개념과 주요 특징은 무엇인가요?
+- Redis가 메모리 기반 데이터 저장소로서 제공하는 장점은 무엇이며, 이로 인한 단점은 무엇인가요?
+- Redis에서 제공하는 데이터 타입(스트링, 리스트, 셋, 정렬된 셋, 해시 등)에 대해 설명해주세요.
+- Redis의 키-값 구조와 다른 NoSQL 데이터베이스와의 차이점은 무엇인가요?
+- Redis에서 Persistence를 위해 지원하는 RDB와 AOF 방식의 차이점과 각각의 장단점은 무엇인가요?
+- Redis의 Pub/Sub 기능은 어떻게 동작하며, 이를 활용한 메시징 시스템 구현 사례에 대해 설명해주세요.
+- Redis Cluster의 기본 아키텍처와 데이터 샤딩(sharding) 방식에 대해 설명해주세요.
+- Redis Sentinel의 역할은 무엇이며, 이를 통해 어떻게 고가용성을 보장할 수 있나요?
+- Redis의 캐시 만료(expiration) 정책 설정 방법과, 실제 운영 시 고려해야 할 점은 무엇인가요?
+- Redis의 캐시 eviction 정책(LRU, LFU, TTL 등) 간의 차이점과 선택 기준에 대해 설명해주세요.
+- Redis의 트랜잭션 기능(MULTI, EXEC, WATCH 등)을 활용하여 동시성 문제를 어떻게 해결할 수 있는지 설명해주세요.
+- Redis에서 Lua 스크립트를 사용하는 이유와, 스크립팅 기능이 주는 이점은 무엇인가요?
+- Redis의 메모리 관리 전략과, 메모리 부족 시 발생할 수 있는 문제 및 해결 방법에 대해 설명해주세요.
+- Redis에서 Key 네임스페이스(예: Key prefix)를 사용하는 이유와 장점은 무엇인가요?
+- Redis를 활용한 세션 관리 구현의 장점과 고려해야 할 단점은 무엇인가요?
+- Redis의 데이터 복제(replication) 메커니즘과 이를 통한 데이터 가용성 확보 방법에 대해 설명해주세요.
+- Redis에서 데이터 정합성을 보장하기 위한 방법에는 어떤 것들이 있으며, 각각의 한계는 무엇인가요?
+- Redis 성능 최적화를 위해 고려해야 할 주요 설정과 모니터링 도구에는 어떤 것들이 있나요?
+- Redis와 Memcached의 차이점 및 각 솔루션의 장단점에 대해 설명해주세요.
+- Redis를 운영할 때 데이터 보안 및 접근 제어는 어떻게 구현할 수 있나요?
+- Redis 사용 시 발생할 수 있는 메모리 단편화 문제와 이를 완화하기 위한 전략은 무엇인가요?
+- Redis의 키 만료(expire) 기능이 내부적으로 어떻게 구현되는지, 그리고 만료된 데이터를 효율적으로 처리하는 방법은 무엇인가요?
+- Redis의 비동기 복제와 동기 복제 방식의 차이점, 그리고 각 방식의 선택 기준에 대해 설명해주세요.
+- Redis의 WATCH 명령어를 활용한 Optimistic Locking 메커니즘은 어떻게 동작하나요?
+- Redis Cluster에서 데이터 재분배(Resharding)를 수행할 때의 절차와 주의할 점은 무엇인가요?
+- Redis의 Multi/Exec 트랜잭션이 ACID 특성을 어떻게 보장하는지 설명해주세요.
+- 정렬된 셋(sorted set)의 내부 구현 방식과, 이를 활용한 대표적인 활용 사례에 대해 설명해주세요.
+- Redis의 해시(Hash) 자료구조를 활용하여 메모리 사용량을 최적화하는 방법은 무엇인가요?
+- Redis에서 메모리 사용 현황을 모니터링하기 위한 주요 명령어(redis-cli info memory 등)와 그 활용법에 대해 설명해주세요.
+- Redis Modules나 Redis Streams와 같은 최신 기능들이 백엔드 시스템에서 어떻게 활용될 수 있는지, 그리고 이들이 기존 기능과 비교해 갖는 장점은 무엇인지 설명해주세요.
