@@ -2,6 +2,113 @@
 
 1. 각종 정렬 알고리즘을 구현해 보세요.
 2. 각종 자료구조 (ex. LinkedList, Queue, Stack, Tree, ...) 를 구현해 보세요.
+```c++
+// vector
+#include <bits/stdc++.h>
+using namespace std;
+template <class T>
+class _vector {
+public:
+    int _size;
+    int capacity;
+    T *arr;
+    _vector() {
+        _size = 0;
+        capacity = 32;
+        arr = new T[capacity];
+    }
+    _vector(int k) {
+        _size = k;
+        capacity = k;
+        arr = new T[capacity];
+    }
+    ~_vector() {
+        delete[] arr;
+    }
+    void clear() {
+        delete[] arr;
+        _size = 0;
+        capacity = 32;
+        arr = new T[capacity];
+    }
+    void resize(int k) {
+        T *tmp;
+        tmp = new T[k];
+        for(int i = 0; i < _size; i++) {
+            tmp[i] = arr[i];
+        }
+        delete[] arr;
+        arr = tmp;
+        _size = k;
+        capacity = k;
+    }
+    int size() {
+        return _size;
+    }
+    T* begin() {
+        return &arr[0];
+    }
+    T* end() {
+        return &arr[0] + _size;
+    }
+    void push_back(T val) {
+        if(_size == capacity) {
+            resize(_size * 2);
+            _size /= 2;
+        }
+        arr[_size++] = val;
+    }
+    void pop_back() {
+        _size--;
+    }
+    T& operator [](int idx) {
+        return arr[idx];
+    }
+    T operator [](int idx) const {
+        return arr[idx];
+    }
+};
+```
+```c++
+// stack
+#include <bits/stdc++.h>
+using namespace std;
+template <class T>
+class _stack {
+public:
+    struct Node {
+        T val;
+        Node *next;
+        Node() {}
+        Node(T val) : val(val), next(nullptr){}
+    };
+    Node *head;
+    int _size;
+    _stack() {
+        head = nullptr;
+        _size = 0;
+    }
+    void push(T val) {
+        Node *tmp = new Node(val);
+        if(head == nullptr) {
+            head = tmp;
+        } else {
+            tmp->next = head;
+            head = tmp;
+        }
+        _size++;
+    }
+    void pop() {
+        Node *tmp = head;
+        head = head->next;
+        delete tmp;
+        _size--;
+    }
+    bool empty() const { return _size == 0; }
+    T top() const { return head->val; }
+    int size() const { return _size; }
+};
+```
 3. 배열에 1,000,000 개의 수가 있다고 가정할 때, 여기에서 원하는 수가 몇 번째 인덱스에 위치해 있는지 확인하는 프로그램을 작성해 보세요. (단, 원하는 수가 하나가 아닐 수 있습니다.)
 ```c++
 int N; cin << N;
