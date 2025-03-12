@@ -57,3 +57,35 @@
 - Lombok의 @Data를 잘 사용하지 않는 이유는 무엇일까요?
 - Tomcat이 정확히 어떤 역할을 하는 도구인가요?
 - 혹시 Netty에 대해 들어보셨나요? 왜 이런 것을 사용할까요?
+- 
+## Spring
+
+- Spring Framework의 기본 개념과 주요 특징에 대해 설명해주세요.
+- Spring Boot와 전통적 Spring Framework의 차이점은 무엇인가요?
+- IoC(Inversion of Control)와 DI(Dependency Injection)의 개념 및 이점에 대해 설명해주세요.
+- Spring Bean의 라이프사이클과 관련 콜백 메서드에 대해 설명해주세요.
+- @Component, @Service, @Repository의 차이점 및 사용 사례는 무엇인가요?
+- AOP(Aspect Oriented Programming)를 활용한 공통 관심사 분리 방법에 대해 설명해주세요.
+- Spring에서 트랜잭션 관리와 @Transactional 어노테이션의 역할에 대해 설명해주세요.
+- Spring MVC 아키텍처의 구성 요소와 요청 처리 과정을 설명해주세요.
+- Spring Boot의 자동 구성(Auto-Configuration) 원리에 대해 설명해주세요.
+- 예외 처리를 위한 @ControllerAdvice의 역할과 활용 방법은 무엇인가요?
+- Spring Security의 기본 개념과 인증/인가 처리 흐름에 대해 설명해주세요.
+- RESTful API를 Spring에서 구현하는 방법과 모범 사례는 무엇인가요?
+- Spring Boot Actuator를 통한 애플리케이션 모니터링 방법은 무엇인가요?
+- Spring Cloud를 활용한 마이크로서비스 아키텍처 구현 전략에 대해 설명해주세요.
+- Spring에서 메시징 시스템(Kafka, RabbitMQ 등)과의 연동 방법은 무엇인가요?
+- Spring의 캐싱 추상화(Cache Abstraction)와 캐시 적용 방법에 대해 설명해주세요.
+- Spring Boot에서 프로파일 관리와 환경별 설정 적용 방법은 무엇인가요?
+- Spring Bean의 Scope(싱글톤, 프로토타입 등) 차이점과 활용 사례는 무엇인가요?
+- Spring의 이벤트 발행 및 리스너(Event Listener) 메커니즘에 대해 설명해주세요.
+- 커스텀 어노테이션을 생성하고 이를 Spring에서 활용하는 방법은 무엇인가요?
+- Spring WebFlux와 Spring MVC의 차이점 및 사용 시나리오는 무엇인가요?
+- Spring에서 비동기 처리(Asynchronous Processing)를 구현하는 방법에 대해 설명해주세요.
+- Logback을 이용한 Spring Boot의 로깅 설정과 관리 방법은 무엇인가요?
+- HttpMessageConverter의 역할과 Spring에서의 메시지 변환 과정을 설명해주세요.
+- RestTemplate과 WebClient의 차이점 및 사용 사례에 대해 설명해주세요.
+- @Scheduled 애노테이션을 사용한 스케줄링 작업 구현 방법은 무엇인가요?
+- Spring Boot Starter의 개념과 주요 Starter들의 역할에 대해 설명해주세요.
+- Java Config와 XML Config를 통한 Bean 등록 및 설정 방식의 차이점은 무엇인가요?
+- 최신 Spring 버전에서 추가된 기능 및 개선 사항에 대해 설명해주세요.
